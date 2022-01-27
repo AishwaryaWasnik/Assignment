@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Slider</title>
+</head>
+
+<body>
+  <h1>slider</h1>
+  <div class="slideshow-container">
+    <!--image-->
+    <div class="mySlides">
+      <img name="slides" alt="slides" id="images">
+      
+        <button class="left-side btn" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="right-side btn" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+     
+    </div>
+
+    <br>
+
+    <!-- dots-->
+    <div class="dots" id="dts"></div>
+    
+
+  </div>
+  <script src="slider.js"></script>
+
+</body>
+
+</html>

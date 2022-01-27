@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="Array.css">
+    <title>Slider Array</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Slider">
+            <div id="slides">
+                <div class="Slide">
+                    <h1 class="Name">Emily Ridge</h1>
+                    <img class="user" src="img/user1.jpeg" alt="img1">
+                    <h3 class="Designation">Web Designer & Developer</h3>
+                    <p>After graduating in 2009 with a Bachelor’s Degree
+                        (First Class Honours) in Multimedia Programming and Design,
+                        I spent the last nine years working both as a freelance web developer
+                        and designer and as part of a team in various companies across Galway,
+                        Dublin, Berlin and Melbourne. I acquired project and time management skills,
+                        as well as the ability to communicate with team members and clients while
+                        effectively meeting milestones and deadlines.</p>
+                </div>
+                <div class="Slide">
+                    <h1 class="Name">Nicholas Grundy</h1>
+                    <img class="user" src="img/user2.jpeg" alt="img2">
+                    <h3 class="Designation">Photographer, Copywriter & Translator</h3>
+                    <p>Since turning my passion into a career, I’ve worked as a professional photographer
+                        in Germany, Australia and Ireland. I’ve received numerous awards and my photographs
+                        have appeared in various galleries across the globe. They’re also found in publications
+                        such as Time Magazine, The Sydney Morning Herald Newspaper, Australian Geographic,
+                        and on the cover of Tasmania 40° South Magazine. My fine art prints appear in
+                        the University of Melbourne’s collection.</p>
+                </div>
+                <div class="Slide">
+                    <h1 class="Name">Alex Lakas</h1>
+                    <img class="user" src="img/user3.jpeg" alt="img3">
+                    <h3 class="Designation">UX designer</h3>
+                    <p>Originally from Washington, D.C., Alex is an illustrator turned UX designer.
+                        As well as co-founding a business focused on B2B products, he has worked
+                        with the Local Search Team on Google Maps and on eCommerce and social gaming projects.
+                        He continues to put users first while considering simultaneous and future efforts,
+                        ensuring pixel perfection and a delightful user experience.</p>
+                </div>
+            </div>
+            <div class="button">
+                <button class="left-side btn" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="right-side btn" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+              </div>
+        </div>
+        <form class="input-form">
+            <h1 class="title">Form</h1>
+            <label class="label" for="name">Name:</label>
+            <input type="text" name="Name" class="input" id="name"><br><br>
+            <label class="label" for="Designation">Designation:</label>
+            <input type="text" name="Designation" class="input" id="designation"><br><br>
+            <p class="formfield">
+            <label class="label" for="About" class="text">About:</label>
+            <textarea type="text" name="Description" class="input" id="description"></textarea></p><br><br>
+
+            <input type="button" class="submit-button" onclick="Add()" value="Submit">
+          </form>
+    </div>
+    <script src="Array.js"></script>
+</body>
+
+</html>

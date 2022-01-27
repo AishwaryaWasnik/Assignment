@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>TABS</title>
+    <link rel="stylesheet" type="text/css" href="tabs.css">
+</head>
+<body>
+    <h1 class="title">Tabs</h1>
+    <div class="tab-container">
+        <div class="button-container">
+            <button onclick="showPanel(0,'#87CEEB')">A. P. J. Abdul Kalam</button>
+            <button onclick="showPanel(1,'#B0E0E6')">Charles R. Swindoll</button>
+            <button onclick="showPanel(2,'#ADD8E6')">Swami Vivekananda</button>
+        </div>
+        <div class="tab-panel">
+            My message, especially to young people is to have courage to think differently,
+             courage to invent, to travel the unexplored path,
+              courage to discover the impossible and to conquer the problems and succeed.
+               These are great qualities that they must work towards. 
+               This is my message to the young people.
+        </div>
+        <div class="tab-panel">
+            We cannot change our past.
+             We can not change the fact that people act in a certain way.
+              We can not change the inevitable. The only thing we can do is
+               play on the one string we have, and that is our attitude.
+             </div>
+        <div class="tab-panel">
+            Take up one idea. Make that one idea your life 
+            - think of it, dream of it, live on that idea. 
+            Let the brain, muscles, nerves, every part of your body, be full of that idea,
+             and just leave every other idea alone. This is the way to success.
+        </div>
+    </div>
+   <script>
+       var tabButtons=document.querySelectorAll(".tab-container .button-container button");//fetching all the buttons
+       var tabPanles=document.querySelectorAll(".tab-container .tab-panel");//storing all the pannels
+
+       function showPanel(panelIndex,colorCode){//onclick of tab calling the function
+           tabButtons.forEach(function(node){ // looping all the nodes
+               node.style.backgroundColor=""; // present in
+               node.style.color="";           //tab button
+           });
+           tabButtons[panelIndex].style.backgroundColor=colorCode;// setting the color code for pannel
+           tabButtons[panelIndex].style.color="white";
+           tabPanles.forEach(function(node){
+               node.style.display="none";
+           });
+           tabPanles[panelIndex].style.display="block"; // for the selected pannel 
+           tabPanles[panelIndex].style.backgroundColor=colorCode;
+
+       }
+       showPanel(0,'#87CEEB');
+       
+   </script>
+</body>
+
+    
+</html>
