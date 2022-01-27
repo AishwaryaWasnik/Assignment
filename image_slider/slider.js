@@ -2,17 +2,22 @@ var slide = [{ image: "img/1st_img.jpg"},
 { image: "img/2nd_image.jpg" },
 { image: "img/3rd_image.jpg" }];
 for(var i=0; i<slide.length; i++){
-    document.getElementById("dts").innerHTML += '<span class="dot" id="dts" onclick="currentSlide(' + i + ')"></span>';
+    $("#dts").append('<span class="dot" id="'+i+'"></span>');
 }
 var Index = 0;
 currentSlide(Index);
-function plusSlides(n) {
-  
-    currentSlide(Index += n);
-  }
+$(".left-side").click(function(){
+    currentSlide(Index+=-1);
 
-  
+})
+$(".right-side").click(function(){
+    currentSlide(Index+=1);
 
+})
+$(".dot").click(function(){
+    var displaySlide = parseInt($(this).attr("id"));
+    currentSlide(displaySlide);
+})
 function currentSlide(n)
 {
     if (n >= slide.length) {
@@ -23,11 +28,11 @@ function currentSlide(n)
         Index = slide.length-1;
         n = slide.length-1;
       }
-    var dott =document.querySelectorAll('span');
+    var dott = $(".dot");
     for (var i=0; i<dott.length; i++){
-        dott[i].style.backgroundColor = "black";
+        $(dott).css("background-color","black");
     }
-    document.slides.src=slide[n].image;
-    dott[n].style.backgroundColor="blue";
+    $("img").attr("src",slide[n].image);
+    $(dott[n]).css("background-color","blue");
 }
-window.onload=currentSlide(0);
+
