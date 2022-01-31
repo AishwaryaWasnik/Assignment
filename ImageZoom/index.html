@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Zoom</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1 class="title">Image Zoom</h1>
+  <div class="navigation">
+    <ul>
+      <li style="float:left"><a href="#Home">Home</a></li>
+      <li style="float:left"><a href="#Contact Us">Contact Us</a></li>
+      <li><a href="#Stores">Stores</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#Catalog">Catalog</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#E-Shopping">E-Shopping</a></li>
+    </ul>
+  </div>
+  <div>
+    <img src="img/louis-vuitton-official-website-1.jpg" alt="banner">
+  </div>
+  <div class="button">
+    <a class="buyNow" href="#buy">Buy Now</a>
+  </div>
+
+  <div class="container">
+    <div class="image">
+      <img class="bag_img" src="img/img3.jpg" alt="image">
+    </div>
+    <div class="text">
+      <h2>I think handbags, not so much clothes anymore, but i think you can tell a fashion victim by their handbag.
+      </h2>
+      <p><cite>- Joanna Lumely</cite></p>
+
+    </div>
+  </div>
+  <footer>
+    <p>Company © LV. All rights reserved.</p>
+  </footer>
+
+  <div class="popup">
+    <div class="popup-content">
+      <div class="zoom-inout">
+        <a class="zoom-in">+</a>
+        <a class="zoom-out">-</a>
+      </div>
+      <div class="img-container">
+        <img src="img/img3.jpg" alt="bag" class="zoom-img" />
+      </div>
+      <a class="close">&#10006;</a>
+    </div>
+  </div>
+  <script src="img_zoom.js" type="text/JavaScript"></script>
+</body>
+
+</html>

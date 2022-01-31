@@ -1,0 +1,103 @@
+.title {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px 8px burlywood;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+  width: 100%;
+}
+.button {
+  margin: 20px 100px;
+}
+.buyNow {
+  background-color: #3d2b1f;
+  width: 150px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 20px;
+  padding-left: 100px;
+  font-style: italic;
+  text-shadow: 2px 2px 8px burlywood;
+}
+footer {
+  padding: 10px 20px;
+  background: #564c4d;
+  color: white;
+}
+.popup {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.58);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.popup-content {
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  padding: 40px;
+  overflow: scroll;
+  margin-top: 30px;
+  border-radius: 6px;
+  background: #fff;
+  position: relative;
+}
+.zoom-inout {
+  width: 20px;
+}
+.zoom-in {
+  font-size: 30px;
+  cursor: pointer;
+  top: 45px;
+  position: fixed;
+  font-weight: bold;
+}
+.zoom-out {
+  font-size: 45px;
+  top: 80px;
+  cursor: pointer;
+  position: fixed;
+}
+.close {
+  position: fixed;
+  top: 45px;
+  left: 75%;
+  font-size: 17px;
+  color: #7c7575;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bag_img {
+  cursor: pointer;
+}
