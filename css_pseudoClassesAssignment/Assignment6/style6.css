@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+a:focus{
+    background-color: yellow;
+}
+a:hover{
+    color: red;
+    text-decoration:underline;
+}
+a:active{
+    color: greenyellow;
+}

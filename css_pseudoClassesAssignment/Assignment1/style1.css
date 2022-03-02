@@ -1,0 +1,15 @@
+li{
+    list-style-type: square;
+}
+li:nth-child(2){
+    color: violet;
+}
+li:nth-child(4){
+    color: indigo;
+}
+li:nth-child(6){
+    color: blue;
+}
+li:nth-child(8){
+    color: red;
+}

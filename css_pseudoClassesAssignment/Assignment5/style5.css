@@ -1,0 +1,7 @@
+
+a::before{
+    content: "This is the text before link";
+}
+a::after{
+    content: "This is the text after link";
+}
