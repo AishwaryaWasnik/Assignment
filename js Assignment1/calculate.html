@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>js Assignment 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="input">
+            <input class="input1" type="text" id="No1" name="number1" value=" " placeholder="Enter a value">
+            <br>
+            <br>
+            <input class="input1" type="text" id="No2" name="number2" value=" " placeholder="Enter a value">
+        </div>
+        <div><br>
+            <h1>Result:<span id="result"></span></h1>
+        </div>
+
+
+        <div class="buttons">
+            <button class="btn-add" onclick="add()">Addition</button>
+            <button class="btn-sub " onclick="sub()">Subtraction</button>
+            <br>
+            <br>
+            <button class="btn-mul" onclick="mul()">Multiplication</button>
+            <button class="btn-div" onclick="div()">Division</button>
+            <br>
+            <br>
+            <div class="clear">
+                <input type="button" value="Clear" onclick="Clear()" id="clear" placeholder="Clear">
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="calculate.js"></script>
+</body>
+
+</html>
